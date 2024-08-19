@@ -37,6 +37,12 @@ public class UPITransaction extends Transaction {
         this.upi_Id = upi_Id;
         this.userId = userId;
     }
+    public UPITransaction( String type, double amount, LocalDate date, String status,
+            String upi_Id, String userId) {
+super( type, amount, date, status);
+this.upi_Id = upi_Id;
+this.userId = userId;
+}
 
     /**
      * Gets the UPI ID.

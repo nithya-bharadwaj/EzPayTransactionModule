@@ -31,8 +31,7 @@ public class DBConnection {
 
             System.out.println("Connection successful!");
 
-            // Close the connection
-            connection.close();
+           
         } catch (ClassNotFoundException e) {
             System.out.println("Oracle JDBC Driver not found.");
             e.printStackTrace();
@@ -42,4 +41,5 @@ public class DBConnection {
         }
         return connection;
     }
+  
 }

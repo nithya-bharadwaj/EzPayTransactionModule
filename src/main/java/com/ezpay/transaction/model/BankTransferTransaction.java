@@ -40,6 +40,14 @@ public class BankTransferTransaction extends Transaction {
         this.senderAccount = senderAccount;
         this.receiverAccount = receiverAccount;    
     }
+    
+    public BankTransferTransaction( String type, double amount, LocalDate date, String status,
+            String transferId, String senderAccount, String receiverAccount) {
+super( type, amount, date, status);
+this.transferId = transferId;
+this.senderAccount = senderAccount;
+this.receiverAccount = receiverAccount;    
+}
 
     /**
      * Gets the transfer ID.

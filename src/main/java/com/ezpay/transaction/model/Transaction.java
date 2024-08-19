@@ -46,6 +46,13 @@ public class Transaction {
         this.date = date;
         this.status = status;
     }
+    public Transaction( String type, double amount, LocalDate date, String status) {
+        
+        this.type = type;
+        this.amount = amount;
+        this.date = date;
+        this.status = status;
+    }
 
     // Getters and setters for all fields
 
