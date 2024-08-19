@@ -19,16 +19,7 @@ import java.time.*;
 public class TransactionRepository {
     // List to hold transaction details
     List<Transaction> transactionHistory;
-    LocalDate date;
-
-    // Static block to initialize transaction history with some dummy data
-    {
-        transactionHistory = new ArrayList<>();
-        transactionHistory.add(new UPITransaction(1, "UPI", 1500L, LocalDate.now(), "Success", "abc@oksbi", "user@okhdfc"));
-        transactionHistory.add(new UPITransaction(2, "UPI", 1500L, LocalDate.now(), "Failed", "ram@oksbi", "userTwo@okhdfc"));
-        transactionHistory.add(new BankTransferTransaction(3, "BankTransfer", 1500L, LocalDate.now(), "Pending", "BT1", "senderOne", "ReceiverOne"));
-        transactionHistory.add(new BankTransferTransaction(4, "BankTransfer", 1500L, LocalDate.now(), "Success", "BT2", "senderTwo", "ReceiverTwo"));
-    }
+  
 
     /**
      * Retrieves all transactions.
