@@ -15,7 +15,7 @@ public class DBConnection {
      * 
      * @return Connection object if the connection is successful, null otherwise.
      */
-    public Connection getConnection() {
+    public static Connection getConnection() {
         
         String url = "jdbc:oracle:thin:@localhost:1521:xe"; 
         String user = "system"; 
